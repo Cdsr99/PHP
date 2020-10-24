@@ -4,14 +4,19 @@
 require "src/classes/Tarefa.php";
 require "src/classes/ArquivoTarefa.php";
 
- $tarefa = new Tarefa(0, "Teste", "Teste da classe tarefa", "22/10/2020");
- $tarefa2 = new Tarefa(1, "Teste 2", "Teste da classe tarefa 2", "23/10/2020");
+$nome = $_POST['nome'];
+$descricao = $_POST['descricao'];
+$data = $_POST['data'];
+$status = 0;
+
+
+ $tarefa = new Tarefa($status,$nome ,$descricao,$data);
 
  $listaTarefas = [];
  $listaTarefas[] = $tarefa;
- $listaTarefas[] = $tarefa2;
+ //$listaTarefas[] = $tarefa2;
 
-$arquivoTarefa = new ArquivoTarefa("tarefas.json");
-// $arquivoTarefa->salva($listaTarefas);
+$arquivoTarefa = new ArquivoTarefa("tarefasteste.json");
+$arquivoTarefa->salva($listaTarefas);
 
 print_r($arquivoTarefa->le());
