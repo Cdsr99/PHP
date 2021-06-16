@@ -3,7 +3,7 @@
 require_once "Visitante.php";
 
 abstract class Pessoa{
-    private $nome;
+    protected $nome;
     private $idade;
     private $sexo;
 
