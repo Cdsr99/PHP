@@ -1,14 +1,11 @@
 <?php
 
 //Conexao com o banco de dados 
-$user = "dhl_transporte"; 
-$password = "sp1EhFkokjLBRPY@"; 
-$database = "db_dhl"; 
-$hostname = "db-dhl.mysql.uhserver.com";
+$user = "KeePass"; 
+$password = "KeePass"; 
+$database = "KeePass"; 
+$hostname = "KeePass";
 
-
-
-// mcFin@Ad1min15
 //phpinfo();
 
 //$yoo = new conexaoerro();
