@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de Entrada e Saida</title>
+    
+    <!-- CSS da Application -->
+    <link href="../../assets/css/style.css" rel="stylesheet" type='text/css'>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="/js/script.js"> </script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" id="navbar">
+            <a class="navbar-brand" href="/">
+                <img src="https://assets.dpdhl-brands.com/guides/dhl/guides/design-basics/logo-and-claim/logo/dodont/logo-dodont-6.png" style="width: 100px; height: 70px;" alt="Erro ao carregar a imagem">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/home">Home</a>
+                  </li>
+                  <li class="navbar-nav nav-item dropdown">
+                      <a class="nav-link" href="/cancelar_acesso">Entrada</a>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/acesso_cancelado">Saida</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="src/cadastro_motorista/index.php">Cadastro de Motorista</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <br><br>
+    <center>
+        <h2>Entrada</h2>
+        <pre>
+<form action="entrada.php" method="post">
+    Placa          <input type="text" name="placa" value="#PLACA" readonly="true" required><br><br>
+    Motorista      <input type="text" name="motorista" value="#MOTORISTA" readonly="true" required><br><br>
+    Transportadora <input type="text" name="transportadora" value="#TRANSPORTADORA" readonly="true" required><br><br>
+    Lacre          <input type="text" name="lacre" value="#LACRE" required><br><br>
+    Origem         <input type="text" name="origem" required><br><br>
+    Doca           <input type="text" name="doca" required><br><br>
+    <input type="submit" class="btn btn-dark" value="Salvar">
+
+</form>
+</pre>
+
+    </center>
+
+
+
+
+    <footer class="footer">
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
